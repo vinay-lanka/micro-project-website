@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Microcontrollers</title>
+    <meta name="description" content="Patient monitoring system developed by vinay lanka">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand productsans" href="#">
+            <h3 style="color:#efefef">Patient Monitoring System - Microcontroller Project</h3>
+        </a>
+    </nav>
+
+    <div class="jumbotron productsans" ng-app="microApp" ng-controller="controller">
+        <h1>Hello!</h1>
+        <p>How are you feeling today?</p>
+        <hr>
+        <p>Here is a rundown of your vitals</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Heartrate</h3>
+                            <h6 class="card-subtitle mb-2 text-muted">(In Bpm)</h6>
+                            <p class="card-text">Your Heartrate - {{data.heartrate}}</p>
+                            <button type="button" ng-click="refresh()" class="btn btn-secondary">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Temperature</h3>
+                            <h6 class="card-subtitle mb-2 text-muted">(In Fahrenheit)</h6>
+                            <p class="card-text">Your Temperature - {{data.temperature}}</p>
+                            <button type="button" ng-click="refresh()" class="btn btn-secondary">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Call for assistance</h3>
+                            <h6 class="card-subtitle mb-2 text-muted">Alert</h6>
+                            <p class="card-text">Status - {{data.status}}</p>
+                            <button type="button" ng-click="refresh()" class="btn btn-secondary">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
