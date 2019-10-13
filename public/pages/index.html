@@ -17,9 +17,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b01135f521.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body style="background: rgba(147,206,222,1);
+<body style="background: #93cede;
 background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 58%, rgba(73,165,191,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(58%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
 background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 58%, rgba(73,165,191,1) 100%);
@@ -61,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
                         </strong>
                         <h6 class="card-subtitle mb-2 text-muted">(In Bpm)</h6>
                         <p class="card-text">Your Heartrate - {{data.heartrate}}</p>
-                        <button type="button" ng-click="refresh()" class="btn btn-secondary"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                        <div class="fab" ng-click="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="card shadow-lg" style="width: 22rem; border-radius:15px;  
@@ -72,7 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
                         </strong>
                         <h6 class="card-subtitle mb-2 text-muted">(In Fahrenheit)</h6>
                         <p class="card-text">Your Temperature - {{data.temperature}}</p>
-                        <button type="button" ng-click="refresh()" class="btn btn-secondary"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                        <div class="fab" ng-click="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i></div>
                     </div>
                 </div>
 
@@ -84,7 +85,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
                         </strong>
                         <h6 class="card-subtitle mb-2 text-muted">Alert</h6>
                         <p class="card-text">Status - {{data.status}}</p>
-                        <button type="button" ng-click="refresh()" class="btn btn-secondary"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                        <div class="fab" ng-click="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i></div>
                     </div>
                 </div>
             </div>
@@ -92,10 +93,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
 
         <br>
     </div>
-    <footer>
-
-    </footer>
-
+ 
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
