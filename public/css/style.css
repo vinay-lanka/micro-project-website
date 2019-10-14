@@ -1,10 +1,61 @@
 @font-face {
-    font-family: 'Product Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  }
-  .productsans {
-    font-family: Product Sans;
-    font-size: 150%;
-  }
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+.productsans {
+  font-family: Product Sans;
+  font-size: 25px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(83, 83, 83, 0.315);
+}
+
+.profile {
+  box-shadow: 0 4px 8px 0 rgba(63, 63, 63, 0.315);
+}
+
+.card:hover {
+  box-shadow: -1px 12px 30px -9px rgba(0, 0, 0, 0.86);
+}
+
+.btn {
+  background-color: #cc292b;
+  color: #FFF;
+  border-color: #2F3E48;
+  float: right;
+  border-radius: 10em;
+}
+
+.btn:hover {
+  background-color: #e75659;
+}
+
+.card-text {
+  font-size: .85em;
+}
+
+.fab {
+  width: 46px;
+  height: 46px;
+  background-color: #C83F38;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px 0 #666;
+  transition: all 0.1s ease-in-out;
+
+  font-size: .9em;
+  color: white;
+  text-align: center;
+  padding-top: 13px;
+
+  float: right;
+}
+
+.fab:hover {
+  box-shadow: 0 6px 11px 0 #666;
+  background-color: rgb(194, 47, 40);
+  transform: scale(1.02);
+}
