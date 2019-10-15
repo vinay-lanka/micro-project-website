@@ -46,7 +46,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
                     <img src="../assets/user.png" class="rounded-circle" style="width: 20%; border:solid #6DC8B9;"
                         alt="...">
                 </div>
-                <h1 style="text-align: center;">Hello,Vaishak!</h1>
+                <h1 style="text-align: center;">Hello,Vinay!</h1>
                 <em>
                     <p style="text-align: center;" class="text-muted">How are you feeling today?</p>
                 </em>
@@ -71,7 +71,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
                         <strong>
                             <div class="card-title">Temperature</div>
                         </strong>
-                        <h6 class="card-subtitle mb-2 text-muted">(In Fahrenheit)</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">(In Celsius)</h6>
                         <p class="card-text">Your Temperature - {{data.temperature}}</p>
                         <div class="fab" ng-click="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i></div>
                     </div>
@@ -84,7 +84,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
                             <div class="card-title">Call for Assistance</div>
                         </strong>
                         <h6 class="card-subtitle mb-2 text-muted">Alert</h6>
-                        <p class="card-text">Status - {{data.status}}</p>
+                        <p class="card-text">Status - {{data.state}}</p>
                         <div class="fab" ng-click="refresh()"><i class="fa fa-refresh" aria-hidden="true"></i></div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
 
         <br>
     </div>
- 
+    <div id="snackbar">Assistance Required!</div>
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
