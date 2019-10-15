@@ -11,6 +11,9 @@ app.controller('controller', function($scope, $http, $interval) {
     $scope.data = response.data;
     if($scope.data.status==1){
       $scope.data.state = "Assistance Required!";
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       console.log($scope.data);
     }else{
       $scope.data.state = "It's all good";
